@@ -1,6 +1,14 @@
 CREATE DATABASE software_db;
+
 USE software_db;
-CREATE TABLE developer (developer_id INT PRIMARY KEY,developer_name VARCHAR(50),age TINYINT,role_name VARCHAR(50),salary DECIMAL(10));
+
+CREATE TABLE developer (
+developer_id INT PRIMARY KEY,
+developer_name VARCHAR(50),
+age TINYINT,
+role_name VARCHAR(50),
+salary DECIMAL(10)
+);
 
 CREATE TABLE project (project_id INT PRIMARY KEY, project_name VARCHAR(100), technology VARCHAR(50), budget BIGINT);
 
